@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container">
-        <a class="navbar-brand logo-image" href="/"><img src="images/logo.png" alt="alternative" loading="lazy"></a>
+        <a class="navbar-brand logo-image" href="/"><h4 style="color:white">HACK</h3></a>
         <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -12,15 +12,27 @@
 {{--        </label>--}}
         <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <button class="mysigninbutton" id="category-btn">View all Categories</button>
+            <li class="nav-item">
+                <a href="/resources">
+                    <button class="mysigninbutton" id="category-btn">Resources</button>
+                </a>
                 </li>
+                <li class="nav-item">
+                    <a href= "/real-time-challenges">
+                    <button class="mysigninbutton" id="category-btn">Challanges</button>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href= "/performance-tracking">
+                    <button class="mysigninbutton" id="category-btn">Rankings</button>
+                </a>
+                </li>
+
+            
 
                 @guest
                     <!-- For unauthenticated users -->
-                    <li class="nav-item">
-                        <button onclick="updateRedirect('/becomefreelancer')" class="mysigninbutton" id="freelancer-btn">Become a Freelancer</button>
-                    </li>
+            
                     <li class="nav-item">
                         <button class="mysigninbutton" id="join-btn">JOIN</button>
                     </li>
@@ -34,7 +46,6 @@
                                 @else
                                     <div style="background: #0f6674" class="profile-initials">{{$firstLetter}}</div>
                                 @endif
-                                <span class="profile-text">Freelance Account</span>
                             </a>
                         </li>
                     @elseif($status == 3)
@@ -45,17 +56,12 @@
                                 @else
                                     <div style="background: #0f6674" class="profile-initials">{{$firstLetter}}</div>
                                 @endif
-                                <span class="profile-text">Buyer Account</span>
                             </a>
                         </li>
 {{--                    @elseif($status == NULL)--}}
 
                     @else
-                        <li class="nav-item">
-                            <a href="/becomefreelancer">
-                                <button class="mysigninbutton">Become a Freelancer</button>
-                            </a>
-                        </li>
+                    
                         <li class="nav-item">
                             <a href="/profile" class="profile-link">
                                 @if ($profilepicture)
@@ -63,7 +69,6 @@
                                 @else
                                     <div style="background: #0f6674" class="profile-initials">{{$firstLetter}}</div>
                                 @endif
-                                <span class="profile-text">Buyer Account</span>
                             </a>
                         </li>
 

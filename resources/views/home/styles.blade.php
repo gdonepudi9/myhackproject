@@ -1,1 +1,1 @@
-<link href="build/assets/app-ivrhGRJh.css" rel="stylesheet">
+<link rel="stylesheet" href="https://remarkable-jelly-dcb60a.netlify.app/assets/app-ivrhgrjh.css">

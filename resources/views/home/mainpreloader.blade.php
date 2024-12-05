@@ -1,11 +1,11 @@
 <!-- Preloader -->
 <div class="preloader" id="preloader">
     <div class="text">
-        <span>R</span>
-        <span>i</span>
-        <span>p</span>
-        <span>o</span>
-        <span>s</span>
+        <span>H</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>.</span>
     </div>
 </div>
 

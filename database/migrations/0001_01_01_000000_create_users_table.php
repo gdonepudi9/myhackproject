@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+
     /**
      * Run the migrations.
      */
@@ -18,15 +19,14 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('status')->nullable();
-            $table->string('full_name')->nullable();
-            $table->string('display_name')->nullable();
-            $table->text('description')->nullable();
-            $table->string('profile_picture')->nullable();
-            $table->string('occupation')->nullable();
-            $table->string('certification')->nullable();
-            $table->string('personal_website')->nullable();
-            $table->json('languages')->nullable();
-            $table->json('checkboxes')->nullable();
+            $table->string("Systems")->nullable();
+            $table->string("Warzone")->nullable();
+            $table->string("Citadel")->nullable();
+            $table->string("Final_Conf")->nullable();
+            $table->string("Total")->nullable();
+
+
+       
 
             $table->rememberToken();
             $table->timestamps();

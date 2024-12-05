@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Profile and settings page">
     <title>Profile Page</title>
-    <script src="js/tailwind.js"></script>
+    <script src="https://671e71232473069ef686f9ca--aesthetic-lolly-738f7c.netlify.app/js/tailwind.js"></script>
 
 
 </head>
@@ -291,6 +291,6 @@
 </div>
 
 </body>
-<script src="js/alpine.js"></script>
+<script src="https://671e71232473069ef686f9ca--aesthetic-lolly-738f7c.netlify.app/js/alpine.js"></script>
 
 </html>
